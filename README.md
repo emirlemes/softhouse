@@ -1,8 +1,11 @@
 # Movie app
 
-This app is made using free api for getting, searching movies
-and tv series. In the app you can make temperary changes to any
+This app is made using free api for showing, searching movies
+and tv shows. In the app you can make temporary changes to any
 movie and download data for one or collection of movies.
+
+You can also see information about rates, which can indicate
+one of the main reasons to pick that Movie or TV Show.
 
 Free api for getting data can be found on https://www.themoviedb.org/ 
 where you can reqeuest api key to access data.
