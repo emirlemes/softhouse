@@ -40,7 +40,7 @@ export class HttpService {
             movie.release_date = movie.first_air_date
             movie.original_title = movie.original_name
           }
-          movie.poster_path = 'https://image.tmdb.org/t/p/w500' + movie.poster_path
+          movie.poster_path = movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + movie.poster_path : ''
         })
         return response.results
       }))
@@ -50,7 +50,7 @@ export class HttpService {
     const url = this.movieType$.value == '2' ? '/tv/' : '/movie/';
     return this.http.get<MovieDetails>(`${environment.BASE_URL}${url}${id}?language=en-US`)
       .pipe(map(response => {
-        response.backdrop_path = 'https://image.tmdb.org/t/p/w500' + response.backdrop_path
+        response.backdrop_path = response.backdrop_path ? 'https://image.tmdb.org/t/p/w500' + response.backdrop_path : ''
         if (this.movieType$.value == '2') {
           response.title = response.name
           response.release_date = response.first_air_date
