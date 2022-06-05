@@ -51,16 +51,16 @@
         line-height: 70px;
         white-space: nowrap;
       }
-      &-highlight{
-        display: inline-flex;
-        padding: 5px;
-        background: #abababb4;
-        color: #ffffff;
-    }
       &-release-date {
         color: #fff;
         font-weight: 700;
       }
+      &-highlight {
+        padding: 5px;
+        background: #abababb4;
+        color: #ffffff;
+      }
+      
     }
   }
 }
