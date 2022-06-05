@@ -1,27 +1,61 @@
-# Web
+# Movie app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+This app is made using free api for getting, searching movies
+and tv series. In the app you can make temperary changes to any
+movie and download data for one or collection of movies.
 
-## Development server
+Free api for getting data can be found on https://www.themoviedb.org/ 
+where you can reqeuest api key to access data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Technologies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular 14.0.0
+    - @angular/material
+    - @angualr/form (reactive forms)
+    - ngx-toastr (api error notifications)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Run Locally
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Clone the project
 
-## Further help
+```bash
+  git clone https://github.com/emirlemes/softhouse.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Change API_KEY to real key in enviroment.ts file
+
+```bash
+   BASE_URL: 'https://api.themoviedb.org/3',
+   API_KEY: 'API_KEY',
+   production: false
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Demo 
+
+You can preview the app on the following link
+https://emirlemes.github.io/softhouse/
+
