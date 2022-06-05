@@ -1,0 +1,17 @@
+<div class="details">
+  <div class="movie-banner">
+    <img class="movie-banner-img" src="{{movie?.backdrop_path}}" alt="movie image">
+  </div>
+  <div class="movie-content">
+    <div class="movie-wrapper">
+      <div class="movie-header">
+        <h1 class="movie-header-title movie-header-highlight">{{movie?.title}}</h1>
+        <h2 class="movie-header-release-date movie-header-highlight">Release: {{movie?.release_date |
+          date:'mediumDate'}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="details-description">
+    <p class="details-description-text">{{movie?.overview}}</p>
+  </div>
+</div>

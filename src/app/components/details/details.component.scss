@@ -1,0 +1,66 @@
+.movie-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  position: relative;
+}
+.details {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-left: 20px;
+
+  &-description {
+    color: #fff;
+    margin-top: -150px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #001e6c;
+    height: 180px;
+  }
+  &-description-text {
+    font-size: 17px;
+    height: 80%;
+    overflow: hidden;
+}
+  
+  &-description-label {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .movie {
+    &-banner {
+      height: 445px;
+      overflow: hidden;
+
+      &-img {
+        width: 100%;
+        filter: blur(5px);
+      }
+    }
+    &-content {
+      text-align: center;
+      position: relative;
+      top: -200px;
+    }
+    &-header {
+      &-title {
+        font-size: 70px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 70px;
+        white-space: nowrap;
+      }
+      &-highlight{
+        display: inline-flex;
+        padding: 5px;
+        background: #abababb4;
+        color: #ffffff;
+    }
+      &-release-date {
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}

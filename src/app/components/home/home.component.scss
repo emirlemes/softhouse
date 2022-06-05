@@ -1,0 +1,137 @@
+.filters {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.movie {
+  position: relative;
+  width: 280px;
+  margin: 10px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #202020;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 1px 3px 5px 3px rgb(182, 156, 101);
+    transform: translateY(-3px);
+  }
+
+  &-image-container {
+    background-color: #000;
+    position: relative;
+    height: 172px;
+    color: #fff;
+    text-align: center;
+  }
+  &-rating {
+    z-index: 9;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  &-no-image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 172px;
+  }
+  &-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 155px;
+  }
+  &-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &-release {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &-description-text {
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &-edit-btn{
+    bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.loadMore {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  bottom: 10px;
+
+  &-button {
+    background-color: #3f51b5;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    &:hover {
+      background-color: #fff;
+      color: #3f51b5;
+    }
+  }
+}
+
+.pull-right{
+  float: right;
+}
+
+.download-btn{
+  border:none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #b1b1b1;
+  cursor: pointer;
+  &:hover {
+    
+    background-color: #fff;
+  }
+}

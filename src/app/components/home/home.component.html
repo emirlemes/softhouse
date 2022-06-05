@@ -1,0 +1,30 @@
+<div class="filters">
+  <mat-button-toggle-group [(ngModel)]="movieTypeLocal" (change)="typeChange(movieTypeLocal)" name="movieType"
+    aria-label="Font Style">
+    <mat-button-toggle value="1">Movies</mat-button-toggle>
+    <mat-button-toggle value="2">TV shows</mat-button-toggle>
+  </mat-button-toggle-group>
+  <button class="download-btn pull-right" (click)="download()">Download collection</button>
+</div>
+<div class="movies">
+  <ng-container *ngFor="let movie of movies">
+    <div class="movie" (click)="openMovieDetails(movie.id)">
+      <div class="movie-rating">
+        <span class="movie">{{movie.vote_average}}</span>
+      </div>
+      <div class="movie-image-container">
+        <img *ngIf="movie.poster_path" src="{{movie.poster_path}}" alt="thumbnail" class="movie-thumbnail">
+        <span *ngIf="!movie.poster_path" class="movie-no-image">No image</span>
+      </div>
+      <div class="movie-description">
+        <p class="movie-title">{{movie.title}}</p>
+        <p class="movie-release">Release: {{movie.release_date | date:'mediumDate'}}</p>
+        <p class="movie-description-text">{{movie.overview}}</p>
+        <button class="movie-edit-btn" (click)="openDialog(movie); $event.stopPropagation()">Edit</button>
+      </div>
+    </div>
+  </ng-container>
+</div>
+<div class="loadMore">
+  <button class="loadMore-button" color="primary" (click)="loadMore()">Load more</button>
+</div>

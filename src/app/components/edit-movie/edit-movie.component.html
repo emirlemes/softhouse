@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>{{title}}</h2>
+
+<div [formGroup]="form" class="edit-form">
+
+  <div class="edit-form-group">
+    <label for="title">Title: </label>
+    <input id="title" type="text" formControlName="title">
+  </div>
+  <div class="edit-form-group">
+    <label for="overview">Description: </label>
+    <textarea id="overview" type="text" formControlName="overview"></textarea>
+  </div>
+  <div class="edit-form-group">
+    <label for="original_title">Original title: </label>
+    <input id="original_title" type="text" formControlName="original_title">
+  </div>
+  <div class="edit-form-group">
+    <label for="release_date">Release date: </label>
+    <input id="release_date" type="date" formControlName="release_date">
+  </div>
+  <div class="edit-form-group">
+    <label for="poster_path">Poster path: </label>
+    <input id="poster_path" type="text" formControlName="poster_path">
+  </div>
+</div>
+<div class="edit-actions-btn">
+  <button (click)="close()">Close</button>
+  <button class="btn-success" (click)="save()">Save</button>
+  <button (click)="download()">Download</button>
+</div>

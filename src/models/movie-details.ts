@@ -1,0 +1,30 @@
+export default class MovieDetails {
+  name: string = '';
+  adult: boolean = false;
+  backdrop_path: string = '';
+  belongs_to_collection?: any = null
+  budget: number = 0;
+  genres: Array<{ id: number, name: string }> = Array<{ id: number, name: string }>();
+  homepage: string = '';
+  id: number = 0;
+  imdb_id: string = ""
+  original_language: string = ""
+  original_title: string = ""
+  original_name: string = ""
+  overview: string = ""
+  popularity: number = 0;
+  poster_path: string = ""
+  production_companies: Array<{ id: number, logo_path: string, name: string, origin_country: string }> = Array<{ id: number, logo_path: string, name: string, origin_country: string }>();
+  production_countries: Array<{ iso_3166_1: string, name: string }> = Array<{ iso_3166_1: string, name: string }>();
+  release_date: string = ""
+  revenue: number = 0;
+  runtime: number = 0;
+  spoken_languages: Array<{ iso_639_1: string, name: string }> = Array<{ iso_639_1: string, name: string }>();
+  first_air_date: string = ""
+  status: string = ""
+  tagline: string = ""
+  title: string = ""
+  video: boolean = false;
+  vote_average: number = 0;
+  vote_count: number = 0;
+}
